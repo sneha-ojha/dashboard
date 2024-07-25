@@ -1,0 +1,324 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  background: rgb(24, 157, 219);
+  color: white;
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.head {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 1.1rem;
+}
+
+.icon-head {
+  font-size: 20px;
+
+  color: white;
+  padding: 0.9rem;
+  justify-self: center;
+}
+
+.head h3 {
+  align-self: center;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+
+.primary-categories {
+  margin-top: 0.8rem;
+}
+
+.secondary-categories {
+  margin-top: 2rem;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 0.4rem;
+}
+
+.title p {
+  text-transform: capitalize;
+  font-size: 14px;
+  align-self: center;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+}
+
+.icon {
+  padding: 0.3rem 0.9rem;
+  font-size: 16px;
+
+  justify-self: center;
+}
+
+.profile-icon,
+.hourglass-icon,
+.tasks-icon,
+.community-icon {
+  font-size: 14px;
+}
+
+/* CONTENT */
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEAD SECTION */
+.head-section {
+  background-color: white;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
+  z-index: -1; /* did this so box-shadow does not come onto the sidebar */
+}
+
+/* NAV */
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+
+  gap: 4rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  gap: 1rem;
+  flex: 1;
+}
+
+.search-icon {
+  height: 14px;
+}
+
+.search-bar {
+  width: 300px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(150, 166, 197, 0.255);
+  max-width: 600px;
+  flex: 1;
+}
+
+.bell-icon {
+  height: 17px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-shrink: 0;
+  padding-right: 4rem;
+}
+
+.profile-picture {
+  background-color: rgb(246, 216, 81);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: grid;
+}
+
+.profile-icon {
+  place-self: center;
+  height: 16px;
+}
+
+.profile-name {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+/* HEADER */
+
+.header {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.user-container {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+}
+
+.user-profile {
+  scale: 1.3;
+}
+
+.greeting {
+  padding-left: 0;
+}
+.greeting p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.greeting h3 {
+  font-size: 16px;
+}
+
+.btn {
+  padding: 8px 10px;
+  width: 5rem;
+  background-color: rgb(24, 157, 219);
+  border: none;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 20px;
+  margin-right: 0.88rem;
+}
+
+/* PROJECTS SECTION */
+
+.projects-section {
+  background-color: rgba(228, 238, 246, 0.784);
+  flex: 1;
+  padding: 1.6rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.left-project-section {
+  max-width: 800px;
+}
+
+.left-project-section h4 {
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.cards {
+  background-color: white;
+  padding: 1.2rem 1rem;
+  border-radius: 5px;
+  border-left: 6px solid goldenrod;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+.cards h5 {
+  text-transform: capitalize;
+}
+.cards p {
+  color: grey;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  padding-top: 0.2rem;
+  line-height: 16px;
+}
+.icon-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+  margin-top: 0.8rem;
+}
+
+/* right content section */
+
+.right-project-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.announcements h4 {
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+}
+
+.updates {
+  background-color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.updates h5 {
+  text-transform: capitalize;
+  margin-bottom: 0.2rem;
+}
+
+.updates p {
+  color: grey;
+  font-size: 12px;
+}
+
+.updates div:not(:last-child) {
+  border-bottom: 1px solid rgba(169, 165, 165, 0.433);
+}
+
+.updates div {
+  padding: 0.8rem 0;
+}
+
+.trending h4 {
+  margin-bottom: 0.7rem;
+}
+
+.updates-main {
+  background-color: white;
+  border-radius: 5px;
+  padding: 0.6rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.trending-updates {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+
+  padding: 0.5rem 1rem;
+}
+
+.profile-info p {
+  padding-bottom: 0.2rem;
+  font-size: 13px;
+}
+
+.trending-project-title {
+  color: grey;
+}
